@@ -1,5 +1,4 @@
 "use client";
-
 import { SkipSelectionPage } from "@/components/skip-selection/skip-selection-page";
 import { Skip } from "@/types/skip.types";
 
@@ -11,8 +10,12 @@ type Props = {
 };
 
 export default function ClientPage({ locationParams }: Props) {
-  const handleSkipSelected = (skip: Skip) => {
-    console.log("Skip selected:", skip);
+  const handleSkipSelected = (skip: Skip | null) => {
+    if (skip) {
+      console.log("Skip selected:", skip);
+    } else {
+      console.log("Skip deselected");
+    }
   };
 
   const handleBack = () => {
