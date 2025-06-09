@@ -155,7 +155,7 @@ export function SkipSelectionPage({
 
                 {/* Price */}
                 <div className="text-center sm:text-right">
-                  <div className="text-3xl font-bold text-blue-600 mb-1">
+                  <div className="text-3xl font-bold text-blue-600">
                     {formatPrice(
                       calculatePriceWithVAT(
                         selectedSkip.price_before_vat,
@@ -181,7 +181,7 @@ export function SkipSelectionPage({
             </div>
 
             {/* Action Buttons */}
-            <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="flex items-center justify-between gap-4">
               <button
                 onClick={onBack}
                 className="px-6 py-3 bg-gray-700 text-gray-200 font-medium rounded-lg transition-colors cursor-pointer flex items-center gap-2"
