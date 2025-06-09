@@ -25,6 +25,7 @@ A complete redesign of the WeWantWaste skip selection page, built with Next.js 1
 - **Styling**: Tailwind CSS
 - **API Integration**: WeWantWaste API
 - **State Management**: React Hooks
+- **Deployment**: Vercel
 
 ## 🏗️ My Approach
 
